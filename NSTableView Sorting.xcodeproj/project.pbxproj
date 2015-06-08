@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA83EFCA1B25B879009D0691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83EFC91B25B879009D0691 /* AppDelegate.swift */; };
+		EA83EFCC1B25B879009D0691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83EFCB1B25B879009D0691 /* ViewController.swift */; };
+		EA83EFCE1B25B879009D0691 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA83EFCD1B25B879009D0691 /* Images.xcassets */; };
+		EA83EFD11B25B879009D0691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA83EFCF1B25B879009D0691 /* Main.storyboard */; };
+		EA83EFDD1B25B879009D0691 /* NSTableView_SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83EFDC1B25B879009D0691 /* NSTableView_SortingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA83EFD71B25B879009D0691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA83EFBC1B25B879009D0691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA83EFC31B25B879009D0691;
+			remoteInfo = "NSTableView Sorting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA83EFC41B25B879009D0691 /* NSTableView Sorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSTableView Sorting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA83EFC81B25B879009D0691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA83EFC91B25B879009D0691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA83EFCB1B25B879009D0691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA83EFCD1B25B879009D0691 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA83EFD01B25B879009D0691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA83EFD61B25B879009D0691 /* NSTableView SortingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSTableView SortingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA83EFDB1B25B879009D0691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA83EFDC1B25B879009D0691 /* NSTableView_SortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableView_SortingTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA83EFC11B25B879009D0691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA83EFD31B25B879009D0691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA83EFBB1B25B879009D0691 = {
+			isa = PBXGroup;
+			children = (
+				EA83EFC61B25B879009D0691 /* NSTableView Sorting */,
+				EA83EFD91B25B879009D0691 /* NSTableView SortingTests */,
+				EA83EFC51B25B879009D0691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA83EFC51B25B879009D0691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA83EFC41B25B879009D0691 /* NSTableView Sorting.app */,
+				EA83EFD61B25B879009D0691 /* NSTableView SortingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA83EFC61B25B879009D0691 /* NSTableView Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				EA83EFC91B25B879009D0691 /* AppDelegate.swift */,
+				EA83EFCB1B25B879009D0691 /* ViewController.swift */,
+				EA83EFCD1B25B879009D0691 /* Images.xcassets */,
+				EA83EFCF1B25B879009D0691 /* Main.storyboard */,
+				EA83EFC71B25B879009D0691 /* Supporting Files */,
+			);
+			path = "NSTableView Sorting";
+			sourceTree = "<group>";
+		};
+		EA83EFC71B25B879009D0691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA83EFC81B25B879009D0691 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA83EFD91B25B879009D0691 /* NSTableView SortingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA83EFDC1B25B879009D0691 /* NSTableView_SortingTests.swift */,
+				EA83EFDA1B25B879009D0691 /* Supporting Files */,
+			);
+			path = "NSTableView SortingTests";
+			sourceTree = "<group>";
+		};
+		EA83EFDA1B25B879009D0691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA83EFDB1B25B879009D0691 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA83EFC31B25B879009D0691 /* NSTableView Sorting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA83EFE01B25B879009D0691 /* Build configuration list for PBXNativeTarget "NSTableView Sorting" */;
+			buildPhases = (
+				EA83EFC01B25B879009D0691 /* Sources */,
+				EA83EFC11B25B879009D0691 /* Frameworks */,
+				EA83EFC21B25B879009D0691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSTableView Sorting";
+			productName = "NSTableView Sorting";
+			productReference = EA83EFC41B25B879009D0691 /* NSTableView Sorting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA83EFD51B25B879009D0691 /* NSTableView SortingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA83EFE31B25B879009D0691 /* Build configuration list for PBXNativeTarget "NSTableView SortingTests" */;
+			buildPhases = (
+				EA83EFD21B25B879009D0691 /* Sources */,
+				EA83EFD31B25B879009D0691 /* Frameworks */,
+				EA83EFD41B25B879009D0691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA83EFD81B25B879009D0691 /* PBXTargetDependency */,
+			);
+			name = "NSTableView SortingTests";
+			productName = "NSTableView SortingTests";
+			productReference = EA83EFD61B25B879009D0691 /* NSTableView SortingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA83EFBC1B25B879009D0691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = bit.boutique;
+				TargetAttributes = {
+					EA83EFC31B25B879009D0691 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					EA83EFD51B25B879009D0691 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = EA83EFC31B25B879009D0691;
+					};
+				};
+			};
+			buildConfigurationList = EA83EFBF1B25B879009D0691 /* Build configuration list for PBXProject "NSTableView Sorting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA83EFBB1B25B879009D0691;
+			productRefGroup = EA83EFC51B25B879009D0691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA83EFC31B25B879009D0691 /* NSTableView Sorting */,
+				EA83EFD51B25B879009D0691 /* NSTableView SortingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA83EFC21B25B879009D0691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA83EFCE1B25B879009D0691 /* Images.xcassets in Resources */,
+				EA83EFD11B25B879009D0691 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA83EFD41B25B879009D0691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA83EFC01B25B879009D0691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA83EFCC1B25B879009D0691 /* ViewController.swift in Sources */,
+				EA83EFCA1B25B879009D0691 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA83EFD21B25B879009D0691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA83EFDD1B25B879009D0691 /* NSTableView_SortingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA83EFD81B25B879009D0691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA83EFC31B25B879009D0691 /* NSTableView Sorting */;
+			targetProxy = EA83EFD71B25B879009D0691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA83EFCF1B25B879009D0691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA83EFD01B25B879009D0691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA83EFDE1B25B879009D0691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA83EFDF1B25B879009D0691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EA83EFE11B25B879009D0691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSTableView Sorting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA83EFE21B25B879009D0691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSTableView Sorting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA83EFE41B25B879009D0691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSTableView SortingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTableView Sorting.app/Contents/MacOS/NSTableView Sorting";
+			};
+			name = Debug;
+		};
+		EA83EFE51B25B879009D0691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSTableView SortingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTableView Sorting.app/Contents/MacOS/NSTableView Sorting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA83EFBF1B25B879009D0691 /* Build configuration list for PBXProject "NSTableView Sorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA83EFDE1B25B879009D0691 /* Debug */,
+				EA83EFDF1B25B879009D0691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA83EFE01B25B879009D0691 /* Build configuration list for PBXNativeTarget "NSTableView Sorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA83EFE11B25B879009D0691 /* Debug */,
+				EA83EFE21B25B879009D0691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA83EFE31B25B879009D0691 /* Build configuration list for PBXNativeTarget "NSTableView SortingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA83EFE41B25B879009D0691 /* Debug */,
+				EA83EFE51B25B879009D0691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA83EFBC1B25B879009D0691 /* Project object */;
+}
