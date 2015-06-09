@@ -21,7 +21,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     items = ["Macbook", "Mac Pro", "iMac"]
     
     tableView.registerForDraggedTypes([MyRowType, NSFilenamesPboardType])
-    //tableView.setDraggingSourceOperationMask(NSDragOperation.Every, forLocal: true)
   }
   
   func numberOfRowsInTableView(tableView: NSTableView) -> Int {
@@ -75,7 +74,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
   func _moveItem(item: String, from: Int, to: Int) {
     items.removeAtIndex(from)
     
-    if(to > (items.count - 1)) {
+    if(to > items.endIndex) {
       items.append(item)
     }
     else {
