@@ -158,9 +158,11 @@
 				TargetAttributes = {
 					EA83EFC31B25B879009D0691 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0820;
 					};
 					EA83EFD51B25B879009D0691 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = EA83EFC31B25B879009D0691;
 					};
 				};
@@ -331,6 +333,7 @@
 				INFOPLIST_FILE = "NSTableView Sorting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -342,6 +345,7 @@
 				INFOPLIST_FILE = "NSTableView Sorting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -361,6 +365,7 @@
 				INFOPLIST_FILE = "NSTableView SortingTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTableView Sorting.app/Contents/MacOS/NSTableView Sorting";
 			};
 			name = Debug;
@@ -377,6 +382,7 @@
 				INFOPLIST_FILE = "NSTableView SortingTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTableView Sorting.app/Contents/MacOS/NSTableView Sorting";
 			};
 			name = Release;
@@ -400,6 +406,7 @@
 				EA83EFE21B25B879009D0691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA83EFE31B25B879009D0691 /* Build configuration list for PBXNativeTarget "NSTableView SortingTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +415,7 @@
 				EA83EFE51B25B879009D0691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

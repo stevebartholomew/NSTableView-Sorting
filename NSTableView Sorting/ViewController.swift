@@ -20,49 +20,49 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     items = ["Macbook", "Mac Pro", "iMac"]
     
-    tableView.registerForDraggedTypes([MyRowType, NSFilenamesPboardType])
+    tableView.register(forDraggedTypes: [MyRowType, NSFilenamesPboardType])
   }
   
-  func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+  func numberOfRows(in tableView: NSTableView) -> Int {
     return items.count
   }
   
-  func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+  func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
     var identifier = tableColumn!.identifier
-    let cell = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+    let cell = tableView.make(withIdentifier: tableColumn!.identifier, owner: self) as! NSTableCellView
     
     cell.textField?.stringValue = items[row]
     
     return cell
   }
   
-  func tableView(tableView: NSTableView, writeRowsWithIndexes: NSIndexSet, toPasteboard: NSPasteboard) -> Bool {
-    var data = NSKeyedArchiver.archivedDataWithRootObject([writeRowsWithIndexes])
+  func tableView(_ tableView: NSTableView, writeRowsWith writeRowsWithIndexes: IndexSet, to toPasteboard: NSPasteboard) -> Bool {
+    let data = NSKeyedArchiver.archivedData(withRootObject: [writeRowsWithIndexes])
     toPasteboard.declareTypes([MyRowType], owner:self)
     toPasteboard.setData(data, forType:MyRowType)
     
     return true
   }
   
-  func tableView(tableView: NSTableView, validateDrop info: NSDraggingInfo, proposedRow row: Int, proposedDropOperation dropOperation: NSTableViewDropOperation) -> NSDragOperation {
+  func tableView(_ tableView: NSTableView, validateDrop info: NSDraggingInfo, proposedRow row: Int, proposedDropOperation dropOperation: NSTableViewDropOperation) -> NSDragOperation {
 
-    tableView.setDropRow(row, dropOperation: NSTableViewDropOperation.Above)
-    return NSDragOperation.Move
+    tableView.setDropRow(row, dropOperation: NSTableViewDropOperation.above)
+    return NSDragOperation.move
   }
 
   
-  func tableView(tableView: NSTableView, acceptDrop info: NSDraggingInfo, row: Int, dropOperation: NSTableViewDropOperation) -> Bool {
-    var pasteboard = info.draggingPasteboard()
-    var rowData = pasteboard.dataForType(MyRowType)
+  func tableView(_ tableView: NSTableView, acceptDrop info: NSDraggingInfo, row: Int, dropOperation: NSTableViewDropOperation) -> Bool {
+    let pasteboard = info.draggingPasteboard()
+    let rowData = pasteboard.data(forType: MyRowType)
     
     if(rowData != nil) {
-      var dataArray = NSKeyedUnarchiver.unarchiveObjectWithData(rowData!) as! Array<NSIndexSet>,
+      var dataArray = NSKeyedUnarchiver.unarchiveObject(with: rowData!) as! Array<IndexSet>,
           indexSet = dataArray[0]
       
-      var movingFromIndex = indexSet.firstIndex
-      var item = items[movingFromIndex]
+      let movingFromIndex = indexSet.first
+      let item = items[movingFromIndex!]
       
-      _moveItem(item, from: movingFromIndex, to: row)
+      _moveItem(item, from: movingFromIndex!, to: row)
       
       return true
     }
@@ -71,19 +71,19 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
   }
   
-  func _moveItem(item: String, from: Int, to: Int) {
-    items.removeAtIndex(from)
+  func _moveItem(_ item: String, from: Int, to: Int) {
+    items.remove(at: from)
     
     if(to > items.endIndex) {
       items.append(item)
     }
     else {
-      items.insert(item, atIndex: to)
+      items.insert(item, at: to)
     }
     tableView.reloadData()
   }
 
-  override var representedObject: AnyObject? {
+  override var representedObject: Any? {
     didSet {
     // Update the view, if already loaded.
     }
