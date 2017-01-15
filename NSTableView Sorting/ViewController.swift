@@ -28,8 +28,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
   }
   
   func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-    var identifier = tableColumn!.identifier
-    let cell = tableView.make(withIdentifier: tableColumn!.identifier, owner: self) as! NSTableCellView
+    let identifier = tableColumn!.identifier
+    let cell = tableView.make(withIdentifier: identifier, owner: self) as! NSTableCellView
     
     cell.textField?.stringValue = items[row]
     
